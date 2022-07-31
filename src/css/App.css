@@ -1,6 +1,7 @@
 .header-top{
     position: fixed;
     display: flex;
+    justify-content: center;
     align-items: center;
     background-color: #B891D7;
     width: 100%;
@@ -25,6 +26,7 @@
     left: 9%;
     width: 20%;
     color: white;
+    margin-left: -7px;
     z-index: 100;
     font-weight: 400;
     font-size: 30px;
@@ -44,7 +46,24 @@
     height: 8px;
     background: #FFFFFF;
     border-radius: 1.5px;
-    animation: logo-gem 5s infinite linear;
+    animation: logo-gem 10s infinite linear;
+}
+.header-bell{
+    position: relative;
+    left: 5%;
+    width: 30px;
+    color: white;
+    z-index: 100;
+    font-weight: 400;
+    font-size: 30px;
+    font-family: system-ui;
+}
+.header-search{
+    position: relative;
+    align-items: center;
+    width: 534px;
+    color: white;
+    z-index: 100;
 }
 @keyframes logo-gem {
     from {
