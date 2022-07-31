@@ -1,4 +1,5 @@
 import logo from '../img/logo.png';
+import headerBell from '../img/bell.png';
 import '../css/App.css';
 import cuenta from '../img/cuenta.png';
 
@@ -12,6 +13,10 @@ function App() {
             <img className='cuenta' src={cuenta} alt="cuenta"/>
 
             <span className='header-title'>BunWe</span>
+        </div>
+        <img className='header-bell' src={headerBell} alt='Notifications'/>
+        <div>
+          <input className='header-search' placeholder='Buscar...'></input>
         </div>
       </div>
       <div className='header-bottom'>
