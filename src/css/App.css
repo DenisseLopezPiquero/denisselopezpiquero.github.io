@@ -46,6 +46,30 @@
     border-radius: 1.5px;
     animation: logo-gem 5s infinite linear;
 }
+
+.sub{
+    text-decoration: none;
+    color:#FFFFFF;
+    font-size: 21px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.sub::before{
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 18px;
+    border-left:1px solid rgb(182, 181, 181);
+    top: 5px;
+    margin-left:-150px;
+
+
+}
+
+.cuenta{
+    margin-top:200px;
+    margin-left: 200px;
+}
 @keyframes logo-gem {
     from {
         transform: rotate(45deg);
