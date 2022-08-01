@@ -33,8 +33,8 @@ function App() {
         <a className="sub" href="www.google.com" style={{marginLeft: '25%'}}>Chats</a>
         <a className="sub" href="www.google.com">Mundo</a>
         <a className="sub" href="www.google.com">Noticias</a>
+        <img className='cuenta' src={cuenta} alt="cuenta"/>
       </div>
-      <img className='cuenta' src={cuenta} alt="cuenta"/>
     </div>
   );
 }

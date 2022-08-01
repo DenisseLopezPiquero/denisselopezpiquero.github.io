@@ -11,6 +11,8 @@
 }
 .header-bottom{
     position: fixed;
+    display: flex;
+    justify-content: center;
     background-color: #9B78C8;
     width: 100%;
     height: 28.83px;
@@ -146,8 +148,9 @@
 }
 
 .cuenta{
-    margin-top:200px;
-    margin-left: 200px;
+    position: fixed;
+    top: 50px;
+    width: 70px;
 }
 @keyframes logo-gem {
     from {
