@@ -13,7 +13,7 @@ function App() {
       <div className='header-top'>
         <div className='header-business'>
             <img className='header-logo' src={logo} alt="logo"/>
-            <span className='header-title'>BunWe</span>
+            <span className='header-title'>Usagi</span>
         </div>
         <img className='header-bell' src={headerBell} alt='Notifications'/>
         <div style={{display: "inline-flex"}}>
@@ -28,9 +28,10 @@ function App() {
         <a className="sub" href="www.google.com" style={{marginLeft: '25%'}}>Chats</a>
         <a className="sub" href="www.google.com">Mundo</a>
         <a className="sub" href="www.google.com">Noticias</a>
+        <img className='cuenta' src={cuenta} alt="cuenta"/>
       </div>
-      <img className='cuenta' src={cuenta} alt="cuenta"/>
     </div>
+    
   );
 }
 

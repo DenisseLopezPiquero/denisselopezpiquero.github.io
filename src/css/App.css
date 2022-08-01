@@ -47,7 +47,7 @@
     height: 8px;
     background: #FFFFFF;
     border-radius: 1.5px;
-    animation: logo-gem 10s infinite linear;
+    animation: logo-gem 5s infinite linear;
 }
 .header-bell{
     position: relative;
@@ -144,9 +144,16 @@
 }
 
 .cuenta{
-    margin-top:200px;
-    margin-left: 200px;
+    position:fixed;
+    z-index:110;
+    top:70px;
+    margin-left: 705px;
+    display: flex;
+    justify-content: center;
+    width:60px;
 }
+
+
 @keyframes logo-gem {
     from {
         transform: rotate(45deg);
