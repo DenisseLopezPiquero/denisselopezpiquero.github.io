@@ -5,6 +5,7 @@ import cuenta from '../img/cuenta.png';
 import lupa from '../img/lupa.png';
 import españa from '../img/españa.png';
 import options from '../img/options.png';
+import carrito from '../img/carrito.png';
 
 
 function App() {
@@ -34,6 +35,10 @@ function App() {
         <a className="sub" href="www.google.com">Mundo</a>
         <a className="sub" href="www.google.com">Noticias</a>
         <img className='cuenta' src={cuenta} alt="cuenta"/>
+        <div>
+        <img className='carrito' src={carrito} alt="carrito"/>
+        </div>
+
       </div>
     </div>
     
