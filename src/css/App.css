@@ -1,4 +1,7 @@
 ::placeholder { color: #ba9dd2; }
+#header{
+    height: 100px;
+}
 .header-top{
     position: fixed;
     display: flex;
@@ -15,7 +18,7 @@
     justify-content: center;
     background-color: #9B78C8;
     width: 100%;
-    height: 24px;
+    height: 27px;
     z-index: 100;
     top: 48.27px;
 }
@@ -134,8 +137,8 @@
     justify-content: center;
     text-decoration: none;
     color: #FFFFFF;
-    font-size: 21px;
-    width: 25%;
+    font-size: 19px;
+    width: 16.6666%;
 }
 .sub::before{
     content: '';
@@ -143,7 +146,7 @@
     width: 2px;
     height: 18px;
     border-left:1px solid rgb(221, 221, 221);
-    top: 6px;
+    top: 5px;
     margin-left: -99%;
 }
 .header-sub-bottom{
