@@ -31,12 +31,14 @@ function App() {
         </div>
       </div>
       <div className='header-bottom'>
-        <a className="sub" href="www.google.com" style={{marginLeft: '25%'}}>Chats</a>
-        <a className="sub" href="www.google.com">Mundo</a>
-        <a className="sub" href="www.google.com">Noticias</a>
+        <div className='header-sub-bottom'>
+          <div className="sub" href="www.google.com" style={{marginLeft: '25%'}}>Chats</div>
+          <div className="sub" href="www.google.com">Mundo</div>
+          <div className="sub" href="www.google.com">Noticias</div>
+        </div>
         <img className='cuenta' src={cuenta} alt="cuenta"/>
         <div>
-        <img className='carrito' src={carrito} alt="carrito"/>
+          <img className='carrito' src={carrito} alt="carrito"/>
         </div>
 
       </div>
