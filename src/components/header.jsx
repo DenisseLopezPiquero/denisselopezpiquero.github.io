@@ -47,7 +47,19 @@ function App() {
         </div>
       </div>
       <div id='home'>
+<<<<<<< Updated upstream
         
+=======
+        <h1> basura humana</h1>
+        <p className='puton'> Mario es un cáncer para la sociedad. Se recomienda castración a martillazos</p>
+        <span> Aaaaaaaa!!!!!</span>
+        <br />
+        <span> Mario se resiste</span>
+        <br />
+        <input type="checkbox"/>
+        <img src={lupa} alt="Internet Ugandés" />
+        <button className='header-button'><img src={lupa} alt="Llora" /></button>
+>>>>>>> Stashed changes
       </div>
     </div>
     

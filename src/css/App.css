@@ -169,6 +169,16 @@
     border: 4px solid #9B78C8;
     width: 60px;
 }
+.puton{
+    justify-content: center;
+    display: flex;
+}
+.puton:hover{
+    color:aqua ;
+}
+.puton:active{
+    color:#9B78C8;
+}
 @keyframes logo-gem {
     from {
         transform: rotate(45deg);
