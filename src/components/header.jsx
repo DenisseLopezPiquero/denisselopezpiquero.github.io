@@ -1,5 +1,4 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'; 
 import logo from '../img/logo.gif';
 import headerBell from '../img/bell.png';
 import '../css/App.css';
@@ -8,17 +7,12 @@ import lupa from '../img/lupa.png';
 import españa from '../img/españa.png';
 import options from '../img/options.png';
 import carrito from '../img/carrito.png';
-import Home from './Home.jsx';
-import Auth from './Auth.jsx';
-import Perfil from './Perfil.jsx';
 
 
 function App() {
-  var logged = true;
   return (
-    <Router>
     <div className="App">
-    {logged ? <div id='header'>
+      <div id='header'>
         <div className='header-top'> 
           <div className='header-divisor'>
             <div className='header-business'>
@@ -53,10 +47,21 @@ function App() {
         </div>
       </div>
       <div id='home'>
+<<<<<<< Updated upstream
         
+=======
+        <h1> basura humana</h1>
+        <p className='puton'> Mario es un cáncer para la sociedad. Se recomienda castración a martillazos</p>
+        <span> Aaaaaaaa!!!!!</span>
+        <br />
+        <span> Mario se resiste</span>
+        <br />
+        <input type="checkbox"/>
+        <img src={lupa} alt="Internet Ugandés" />
+        <button className='header-button'><img src={lupa} alt="Llora" /></button>
+>>>>>>> Stashed changes
       </div>
-      </div>
-    </Router>
+    </div>
     
   );
 }
