@@ -5,7 +5,7 @@ const Users = require('./api/users');
 
 const app = express();
 
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 app.use('/api/users', Users);
@@ -13,8 +13,8 @@ app.use('/api/users', Users);
 mongoose.connect('mongodb://localhost/users',
     { useNewUrlParser: true },
     (err, res) => { 
-        err && console.log('Error conectando a la bd');
-        app.listen(4000, () => {
+        err && console.log('Error connecting to the database: ' + err);
+        app.listen(process.env.PORT, () => {
             console.log('Server running on port 4000');
         });
     }

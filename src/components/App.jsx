@@ -51,10 +51,12 @@ function App() {
             <img className='carrito' src={carrito} alt="carrito"/>
           </div>
         </div>
-      </div>
-      <div id='home'>
-        
-      </div>
+      </div> : <div></div>}
+      <Routes>
+        <Route path="/" element={<Auth />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/profile" element={<Perfil />} />
+      </Routes>
       </div>
     </Router>
     
