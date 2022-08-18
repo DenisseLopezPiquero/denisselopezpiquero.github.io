@@ -14,7 +14,7 @@ import Perfil from './Perfil.jsx';
 
 
 function App() {
-  var logged = true;
+  var logged = false;
   return (
     <Router>
     <div className="App">
