@@ -16,7 +16,7 @@
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -b main -d build",
-    "server": "cd backend && node server.js",
+    "server": "cd backend && nodemon server.js",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -41,6 +41,7 @@
     ]
   },
   "devDependencies": {
+    "eslint-plugin-react": "^7.30.1",
     "gh-pages": "^4.0.0"
   }
 }
