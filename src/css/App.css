@@ -139,7 +139,10 @@
     align-items: center;
     justify-content: center;
 }
-
+.header-linkes
+ {
+    width: 16.66666%;
+ }
 .header-sub{
     position: relative;
     display: flex;
@@ -147,7 +150,6 @@
     text-decoration: none;
     color: #FFFFFF;
     font-size: 19px;
-    width: 16.6666%;
 	-webkit-tap-highlight-color: transparent;
 }
 .header-sub::before{
