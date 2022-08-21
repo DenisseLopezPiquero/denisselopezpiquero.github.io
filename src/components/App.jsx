@@ -17,7 +17,7 @@ import OutsideAlerter from "./OutsideAlerter";
 function App() {
 	var [logged, setLogged] = useState(true);
 	var [optionclick, setOptionClick] = useState(false);
-	var mainLogged = event => {setLogged(current => false);};
+	var mainLogged = (bool) => {setLogged(current => bool);};
 	var clickOptions = event => {setOptionClick(current => !current);};
 	return (
 		<Router>
