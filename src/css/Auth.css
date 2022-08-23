@@ -1,0 +1,74 @@
+.auth-fondo{
+    width: 100%;
+    height: 100%;
+    background-color: #D4BCE7;
+    position:fixed;
+}
+.auth-logo{
+    margin-top: 20px;
+    margin-left: 70px;
+    position: absolute;
+    width: 170px;
+}
+.auth-cuadrado{
+    background-color:#B891D7;
+    width: 600px;
+    height: 639px;
+    margin-left: 13%;
+    border-radius: 80px;
+}
+.auth-centro{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.auth-solologo{
+    display: block;
+    margin: 0px auto;
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+.auth-letras{
+    color: white;
+    font-size: 22px;
+	margin-top: 42px;
+}
+.auth-inputcontainer{
+    margin-left: 100px;
+	display: flex;
+    flex-direction: column;
+	margin-top: -40px;
+}
+.auth-input{
+    border-radius: 3px;
+    border: 0;
+    width: 380px;
+    font-size: 20px;
+    height: 40px;
+    padding-left: 10PX;
+}
+.auth-botoncontainer{
+    justify-content: flex-end;
+    display: flex;
+}
+.auth-linkbutton{
+	margin-right: 111px;
+	margin-top: 40px;
+}
+.auth-boton{
+	background-color: white;
+	border: 0;
+	border-radius:7px ;
+	width: 220px;
+	font-size: 30px;
+	color:#9A4DA7 ;
+	font-weight: 600;
+	height: 60px;
+	cursor: pointer;
+}
+.auth-signuptext{
+display: flex;
+justify-content: center;
+margin-top: 30PX;
+}
