@@ -12,12 +12,17 @@ import options from '../img/options.png';
 import cuenta from '../img/cuenta.jpg';
 import carrito from '../img/carrito.png';
 import OutsideAlerter from "./OutsideAlerter";
-
+import World from './World';
+import Direct from './Direct';
+import Friends from './Friends';
+import News from './News';
+import Chat from './Chat';
+import Dame_pasta from './Dame_pasta';
 
 function App() {
 	var [logged, setLogged] = useState(true);
 	var [optionclick, setOptionClick] = useState(false);
-	var mainLogged = event => {setLogged(current => false);};
+	var mainLogged = (bool) => {setLogged(current => bool);};
 	var clickOptions = event => {setOptionClick(current => !current);};
 	return (
 		<Router>
@@ -56,15 +61,15 @@ function App() {
           			</div>
 		  			<div className='header-bottom'>
           				<div className='header-sub-bottom'>
-          				  	<div className="header-sub"style={{marginLeft: '16.6666%'}}>Chats</div>
-          				  	<div className="header-sub">Directos</div>
-          				  	<div className="header-sub">Mundo</div>
-          				  	<div className="header-sub">Amigos</div>
-          				  	<div className="header-sub">Noticias</div>
+						    <Link to="chat" className='header-linkes'style={{marginLeft: '16.6666%'}}><div className="header-sub">Chats</div></Link>
+          				  	<Link to="direct"className='header-linkes'><div className="header-sub">Directos</div></Link>
+          				  	<Link to="world"className='header-linkes'> <div className="header-sub">Mundo</div></Link>
+          				  	<Link to="friends"className='header-linkes'><div className="header-sub">Amigos</div></Link>
+          				  	<Link to="news"className='header-linkes'><div className="header-sub">Noticias</div></Link>
           				</div>
           				<Link className='header-cuenta' to="profile"><img className='header-cuenta-img' src={cuenta} alt="cuenta"/></Link>
           				<div>
-          				  <img className='header-carrito' src={carrito} alt="carrito"/>
+          				 <Link to="dame_pasta" className='header-link'><img className='header-carrito' src={carrito} alt="carrito"/></Link> 
           				</div>
         			</div>
 				</div>
@@ -73,6 +78,12 @@ function App() {
 					<Route exact path="/" element={<Auth setisLogged={mainLogged} isLogged={logged} />} />
 					<Route path="/home" element={<Home />} />
 					<Route path="/profile" element={<Perfil />} />
+					<Route path="/chat" element={<Chat />} />
+					<Route path="/direct" element={<Direct />} />
+					<Route path="/world" element={<World />} />
+					<Route path="/friends" element={<Friends />} />
+					<Route path="/news" element={<News />} />
+					<Route path="/dame_pasta" element={<Dame_pasta />} />
 				</Routes>
 			</div>
 		</Router>
