@@ -10,7 +10,7 @@ export default class Auth extends react.Component {
 		this.componentDidMount = this.componentDidMount.bind(this);
     }
 	componentDidMount() {
-		this.props.setisLogged();
+		this.props.setisLogged(false);
 	}
     render() {
         return (
@@ -23,27 +23,20 @@ export default class Auth extends react.Component {
                 <label className='auth-letras'>
                     Email or username: 
                 </label>  
-                <br />
-                <input className='auth-input' type="text" name="email" id="input_email" /> 
-                <br />
-                <br />
-                <br />
+                <input className='auth-input' type="text" name="email" id="input_email" />
                 <label className='auth-letras'>
                     Password:
                 </label>
-                <br />
                 <input className='auth-input' type="password" name='password'id='input-password'/>
-                <br />
                 <span className='auth-forgot' >
         
                      Forgot your password? 
                 </span>
-                <br />
                 <a href="https://www.google.com">
                        Click here
                 </a>
                 <div className='auth-botoncontainer'>
-                    <Link to="home"><button className='auth-boton'>Log in</button></Link>
+                    <Link onClick={loginButton} className='auth-linkbutton' to="home"><button className='auth-boton'>Log in</button></Link>
                 </div>
                 </div>  
                 <span className='auth-signuptext'>
@@ -55,6 +48,12 @@ export default class Auth extends react.Component {
 
         </div>
         );
+		function loginButton(e){
+			console.log(e.target.className);
+			if(e.target.className === 'auth-boton'){
+				this.props.setisLogged(true);
+			}
+		}
         async function prueba() {
             const data = {
                 name : 'Juan',

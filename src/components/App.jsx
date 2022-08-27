@@ -22,7 +22,7 @@ import Dame_pasta from './Dame_pasta';
 function App() {
 	var [logged, setLogged] = useState(true);
 	var [optionclick, setOptionClick] = useState(false);
-	var mainLogged = event => {setLogged(current => false);};
+	var mainLogged = (bool) => {setLogged(current => bool);};
 	var clickOptions = event => {setOptionClick(current => !current);};
 	return (
 		<Router>
