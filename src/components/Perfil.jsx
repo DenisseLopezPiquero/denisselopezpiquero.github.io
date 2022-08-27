@@ -1,12 +1,6 @@
 import React from "react";
-<<<<<<< HEAD
 import '../css/Profile.css';
 import fotoprofile from '../img/cuenta.jpg';
-
-
-=======
-import '../css/Perfil.css'
->>>>>>> 5f9c88577e4848f3c8d434548e3f9ec76d054a27
 
 export default class Perfil extends React.Component {
 	render() {
