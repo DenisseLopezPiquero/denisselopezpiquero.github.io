@@ -17,7 +17,7 @@ import Direct from './Direct';
 import Friends from './Friends';
 import News from './News';
 import Chat from './Chat';
-import Dame_pasta from './Dame_pasta';
+import DamePasta from './Dame_pasta';
 
 function App() {
 	var [logged, setLogged] = useState(true);
@@ -83,7 +83,7 @@ function App() {
 					<Route path="/world" element={<World />} />
 					<Route path="/friends" element={<Friends />} />
 					<Route path="/news" element={<News />} />
-					<Route path="/dame_pasta" element={<Dame_pasta />} />
+					<Route path="/dame_pasta" element={<DamePasta />} />
 				</Routes>
 			</div>
 		</Router>

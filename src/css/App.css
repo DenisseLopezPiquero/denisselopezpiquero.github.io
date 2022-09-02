@@ -50,7 +50,8 @@
 	transform: rotate(0deg);
 	transition: 0.2s;
 }
-.header-bell:hover{left: 28.03%;
+.header-bell:hover{
+	left: 28.03%;
 	transform: rotate(-20deg);
 }
 .header-search{
@@ -240,7 +241,7 @@
     position: absolute;
     width: 10px;
     height: 10px;
-    left: 80.8px;
+    left: 79.5px;
     transform: rotate(45deg);
     background-color: #eddfff;
 	top: -7.6px;
@@ -279,6 +280,7 @@
 	width: 100%;
 	border-radius: 4px;
 }
+
 @keyframes logo-gem {
   	from {
     	transform: rotate(45deg);
@@ -383,5 +385,37 @@
 	}
 	.header-button-img {
 		height: 16px;
+	}
+	.header-logout-button{
+		font-size: 12px;
+	}
+	svg{
+		width: 16px;
+		height: 16px;
+	}
+	.header-options-div {
+		margin-top: 4px;
+		margin-left: -62px;
+		width: 97px;
+		border-radius: 3px;
+		border: 1px solid #9B78C8;
+	}
+	.header-options-div::before {
+		width: 7px;
+		height: 7px;
+		left: 67.9px;
+		top: -4.6px;
+		border-top-left-radius: 1.8px;
+		border-top: 1px solid #9B78C8;
+		border-left: 1px solid #9B78C8;
+	}
+	.link-options-hover:hover::before{
+		width: 7px;
+		height: 7px;
+		left: 67.9px;
+		top: -4.6px;
+		border-top-left-radius: 1.8px;
+		border-top: 1px solid #9B78C8;
+		border-left: 1px solid #9B78C8;
 	}
 }
